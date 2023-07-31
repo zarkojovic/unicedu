@@ -1,7 +1,5 @@
 <?php
-
 require "config/connection.php";
-
 class User
 {
     private $con_id;
@@ -14,12 +12,9 @@ class User
             'contact_id',
             'email'
         ], ["user_id" => $id]);
-
         $this->setConId($data[0]["contact_id"]);
         $this->setEmail($data[0]["email"]);
-
     }
-
     public function setConId($id){
         $this->con_id = $id;
     }

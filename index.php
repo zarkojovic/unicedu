@@ -5,7 +5,6 @@ require 'config/connection.php';
 // Create Router instance
 $router = new \Bramus\Router\Router();
 
-//$router->setBasePath('/unicdeu');
 $router->get('/', function () {
     echo "Hello from router!";
 });
@@ -15,7 +14,7 @@ $router->get('/test', function () {
 });
 
 $router->get('/about', function() {
-    include_once ("templates/pages/about.php");
+    include_once("views/pages/about.php");
 });
 // Run it!
 $router->run();
