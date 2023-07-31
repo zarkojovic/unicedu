@@ -19,6 +19,6 @@ $router->get('/about', function() {
 });
 // Run it!
 
-//commentarrr
+//commentar
 $router->run();
 ?>
