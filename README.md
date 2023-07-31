@@ -1,8 +1,8 @@
-# Title
+# Unicedu Platform for students
 
 ## Introduction
 
-Briefly introduce the purpose and content of this document. Provide an overview of what readers can expect to find in the document.
+This is an application in progress for Poland Study program, done by three developers
 
 ## Table of Contents
 
@@ -10,9 +10,9 @@ Briefly introduce the purpose and content of this document. Provide an overview 
 - [Section 2](#section-2)
 - [Section 3](#section-3)
 
-## Section 1
+## Conventions
 
-Explain the content of Section 1. You can use subsections, bullet points, or other Markdown formatting to organize the information.
+Here are some conventions that we should all follow so we get the most optimized code:
 
 ## Section 2
 
