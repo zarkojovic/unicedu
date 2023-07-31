@@ -18,5 +18,7 @@ $router->get('/about', function() {
     include_once ("templates/pages/about.php");
 });
 // Run it!
+
+//commentar
 $router->run();
 ?>
