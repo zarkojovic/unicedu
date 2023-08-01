@@ -1,20 +1,41 @@
 <?php
-require "config/connection.php";
+require_once "config/connection.php";
 class User
 {
     private $con_id;
     private $email;
+    private $password;
 
-    public function __construct($id)
-    {
+    public static function getUser($id){
         global $conn;
         $data = $conn->select('contacts', [
             'contact_id',
             'email'
         ], ["user_id" => $id]);
-        $this->setConId($data[0]["contact_id"]);
-        $this->setEmail($data[0]["email"]);
+        $user = new self();
+        $user->email = $data[0]["email"];
+        $user->con_id = $data[0]["contact_id"];
+        return $user;
     }
+
+    public static function addUser($email, $password, $con_id){
+        $user = new self();
+        $user->con_id = $con_id;
+        $user->email = $email;
+        $user->password = $password;
+        global $conn;
+        $conn->insert('contacts',[
+            "email"=>$user->email,
+            "password"=>$user->password,
+            "contact_id"=>$user->con_id,
+        ]);
+        if($conn->error){
+            throw new ErrorException($conn->error);
+        }else{
+            return $user;
+        }
+    }
+
     public function setConId($id){
         $this->con_id = $id;
     }
