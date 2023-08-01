@@ -1,7 +1,7 @@
 <?php
 
 namespace Martin;
-require_once "config/connection.php";
+//require_once "config/connection.php";
 
 class Student extends User
 {
