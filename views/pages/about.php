@@ -8,7 +8,7 @@ require_once "vendor/kafka0238/crest/src/crest.php";
     $info = CRest::call("methods");
 
     echo "<pre>";
-        var_dump($info);
+//        var_dump($info);
     echo "</pre>";
 
     try {

@@ -13,9 +13,14 @@ class User
             'email'
         ], ["user_id" => $id]);
         $user = new self();
+
         $user->email = $data[0]["email"];
         $user->con_id = $data[0]["contact_id"];
-        return $user;
+//        if($data->error){
+//            throw new ErrorException($conn->error);
+//        }else{
+//            return $user;
+//        }
     }
 
     public static function addUser($email, $password, $con_id){
