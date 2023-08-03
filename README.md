@@ -1,47 +1,86 @@
-# Unicedu Platform for students
+# PHP OOP Project Writing Conventions for Working with API
 
-## Introduction
-
-This is an application in progress for Poland Study program, done by three developers
+This document outlines the writing conventions and best practices to follow while working on a PHP Object-Oriented Programming (OOP) project that involves interacting with APIs (Application Programming Interfaces). Adhering to these conventions ensures consistency, readability, and maintainability of the codebase when working with API-related functionality.
 
 ## Table of Contents
+- [1. Namespace and Class Organization](#1-namespace-and-class-organization)
+- [2. API Endpoint Constants](#2-api-endpoint-constants)
+- [3. Use of Dependency Injection](#3-use-of-dependency-injection)
+- [4. Data Models and DTOs](#4-data-models-and-dtos)
+- [5. Error Handling](#5-error-handling)
+- [6. Request and Response Objects](#6-request-and-response-objects)
+- [7. HTTP Client and Request Methods](#7-http-client-and-request-methods)
+- [8. API Authentication](#8-api-authentication)
+- [9. API Response Parsing](#9-api-response-parsing)
+- [10. Logging](#10-logging)
+- [11. Unit Testing](#11-unit-testing)
+- [12. Code Documentation](#12-code-documentation)
+- [13. Code Review Guidelines](#13-code-review-guidelines)
 
-- [Section 1](#section-1)
-- [Section 2](#section-2)
-- [Section 3](#section-3)
+### 1. Namespace and Class Organization
 
-## Conventions
+- Organize classes within appropriate namespaces to avoid naming conflicts and logically group related classes.
+- Use PSR-4 autoloading standards for class loading.
 
-Here are some conventions that we should all follow so we get the most optimized code:
+### 2. API Endpoint Constants
 
-## Section 2
+- Define constants for API endpoints to avoid hardcoding URLs throughout the codebase.
+- Place the endpoint constants within the respective API-related classes or interfaces.
 
-Explain the content of Section 2. You can include code snippets, images, or other media to illustrate your points.
+### 3. Use of Dependency Injection
 
-### Subsection 2.1
+- Implement dependency injection to promote loose coupling and testability.
+- Inject API client instances or related services into the classes that interact with the API.
 
-If necessary, use subsections to further divide your content.
+### 4. Data Models and DTOs
 
-### Subsection 2.2
+- Create data models or Data Transfer Objects (DTOs) to represent API request and response data structures.
+- Separate concerns by defining specific classes for serialization and deserialization of API data.
 
-Continue providing information in subsections as needed.
+### 5. Error Handling
 
-## Section 3
+- Implement a consistent error handling mechanism to handle API errors gracefully.
+- Throw custom exceptions or use HTTP status codes to indicate API request failures.
 
-Explain the content of Section 3. You can use tables, lists, or other formatting options to present the information effectively.
+### 6. Request and Response Objects
 
-## Conclusion
+- Utilize request and response objects to encapsulate API requests and responses.
+- Use these objects to handle request parameters and parse API responses.
 
-Summarize the key points discussed in the document and provide any closing remarks or calls to action.
+### 7. HTTP Client and Request Methods
 
-## References
+- Utilize a reliable HTTP client library to make API requests (e.g., Guzzle).
+- Avoid using PHP's built-in `file_get_contents` for API interactions.
+- Use appropriate HTTP request methods (GET, POST, PUT, DELETE, etc.) based on the API's semantics.
 
-If you used external sources, provide a list of references or links to give credit to the original authors or sources.
+### 8. API Authentication
 
-## License
+- Implement proper authentication mechanisms for accessing protected APIs.
+- Store sensitive credentials securely, such as using environment variables or configuration files.
 
-Specify the license under which this document is published. Choose an appropriate open-source license or any other relevant license if applicable.
+### 9. API Response Parsing
 
----
-Author: Your Name
-Date: [Date]
+- Implement robust parsing of API responses, considering different response formats (JSON, XML, etc.).
+- Handle pagination and result pagination in a scalable way.
+
+### 10. Logging
+
+- Use logging to track important API interactions and errors for troubleshooting and monitoring purposes.
+- Implement logging in accordance with your project's logging strategy.
+
+### 11. Unit Testing
+
+- Write comprehensive unit tests to ensure the correctness of API-related classes and methods.
+- Mock API responses and requests to test different scenarios and error handling.
+
+### 12. Code Documentation
+
+- Provide clear and concise documentation for classes, methods, and API interaction logic.
+- Follow PHPDoc standards to document class properties, methods, and parameters.
+
+### 13. Code Review Guidelines
+
+- Encourage code reviews to maintain code quality and adherence to conventions.
+- Reviewers should ensure that API-related code follows the conventions outlined in this document.
+
+By following these writing conventions and best practices, you can build a well-structured, maintainable, and reliable PHP OOP project that interacts seamlessly with APIs.
