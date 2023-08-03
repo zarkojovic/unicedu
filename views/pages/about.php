@@ -7,7 +7,9 @@ require_once "vendor/kafka0238/crest/src/crest.php";
 <?php
     $info = CRest::call("methods");
 
-    var_dump($info);
+    echo "<pre>";
+        var_dump($info);
+    echo "</pre>";
 
     try {
         $user = User::getUser('1');
