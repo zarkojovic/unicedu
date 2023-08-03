@@ -5,6 +5,7 @@ namespace Martin;
 
 class Student extends User
 {
+
     #METHODS
     public function printUser()
     {
@@ -14,7 +15,7 @@ class Student extends User
     public function register()
     {
         // TODO: insert this users fields to database, start session and redirect
-        echo "registrovan";
+        echo "to insert into database: ";
     }
 
     public function login()
