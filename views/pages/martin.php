@@ -3,10 +3,10 @@
     use Martin\Agent;
 
 //    include "../../models/autoLoader.php";
-    include "../../models/functions.php";
-    include "../../models/Users/Martin/class.user.php";
-    include "../../models/Users/Martin/class.student.php";
-    include "../../models/Users/Martin/class.agent.php";
+    include "models/functions.php";
+    include "models/Users/Martin/class.user.php";
+    include "models/Users/Martin/class.student.php";
+    include "models/Users/Martin/class.agent.php";
 ?>
 
 <!doctype html>
@@ -33,7 +33,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h3>Register</h3>
-                        <form action="">
+                        <form action="/register" method="post">
                             <div class="form-group">
                                 <label for="email">Email:</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">

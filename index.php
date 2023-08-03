@@ -17,8 +17,17 @@ $router->get('/about', function () {
     include_once("views/pages/about.php");
 });
 
+$router->get('/martin', function () {
+    include_once("views/pages/martin.php");
+});
+
 $router->get('/hello/\d+', function($name) {
     echo 'Hello ' . $name;
+});
+
+$router->post('/register', function() {
+    echo 'Hello ';
+
 });
 
 $router->set404(function() {
