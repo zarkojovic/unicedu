@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87cad7ce43b7497cf5f598e0ee6d3d44",
+    "content-hash": "acce2cc90bb713250e702282b9609f8c",
     "packages": [
         {
             "name": "bramus/router",
@@ -132,6 +132,55 @@
                 }
             ],
             "time": "2023-06-10T07:54:55+00:00"
+        },
+        {
+            "name": "kafka0238/crest",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kafka0238/crest.git",
+                "reference": "8537bf42e09086523fe8c0c4af429751114c550b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kafka0238/crest/zipball/8537bf42e09086523fe8c0c4af429751114c550b",
+                "reference": "8537bf42e09086523fe8c0c4af429751114c550b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kafka0238",
+                    "homepage": "https://github.com/kafka0238/"
+                }
+            ],
+            "description": "A powerfull PHP library for the Bitrix24 REST API",
+            "homepage": "https://github.com/kafka0238/crest",
+            "keywords": [
+                "Bitrix24",
+                "api",
+                "php",
+                "rest"
+            ],
+            "support": {
+                "issues": "https://github.com/kafka0238/crest/issues",
+                "source": "https://github.com/kafka0238/crest/tree/master"
+            },
+            "time": "2020-05-28T13:23:40+00:00"
         }
     ],
     "packages-dev": [],

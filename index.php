@@ -17,6 +17,16 @@ $router->get('/about', function () {
     include_once("views/pages/about.php");
 });
 
+$router->get('/hello/\d+', function($name) {
+    echo 'Hello ' . $name;
+});
+
+$router->set404(function() {
+    header('HTTP/1.1 404 Not Found');
+    include_once ("views/pages/404.php");
+    // ... do something special here
+});
+
 // Run it!
 $router->run();
 ?>

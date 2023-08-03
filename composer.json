@@ -1,6 +1,7 @@
 {
     "require": {
         "catfan/medoo": "^2.1",
-        "bramus/router": "~1.6"
+        "bramus/router": "~1.6",
+        "kafka0238/crest": "^0.1.0"
     }
 }

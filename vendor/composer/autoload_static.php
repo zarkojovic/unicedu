@@ -31,6 +31,7 @@ class ComposerStaticInit1d8a6166ad4f4610e8b5ba3e10217c0e
     );
 
     public static $classMap = array (
+        'CRest' => __DIR__ . '/..' . '/kafka0238/crest/src/crest.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
