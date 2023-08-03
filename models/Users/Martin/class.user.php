@@ -21,4 +21,7 @@ abstract class User
 
     #METHODS
     public abstract function printUser();
+    abstract public function register();
+    abstract public function login();
+
 }
